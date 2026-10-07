@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../CSS/AsamPedas.css">
+  <title>Asam Pedas</title>
+<script>
+function rateUseful(isUseful) {
+    const msg = document.getElementById("usefulMsg");
+
+    if (isUseful) {
+        msg.innerHTML = "Thank you! We're glad this information was useful to you.";
+        msg.style.color = "green";
+    } else {
+        msg.innerHTML = "Thank you for your feedback. We will improve this information.";
+        msg.style.color = "red";
+    }
+}
+function saveComment(event) {
+    event.preventDefault(); 
+
+    const commentBox = document.getElementById("comment");
+    const comment = commentBox.value.trim();
+    const submitMsg = document.getElementById("submit-comment");
+
+    submitMsg.innerHTML = "Your comment has been submitted: " + comment;
+    submitMsg.style.color = "green";
+
+    commentBox.value = "";
+}
+
+</script>
+
+<body>
+
+<header class="header">
+
+      <a href="Taste of Muar.html">
+           <button class="btn">Home</button>
+        </a>
+	  
+	  <a href="AsamPedas.html">
+           <button class="btn">Asam Pedas</button>
+        </a>
+	  
+	  <a href="LaksaJohor.html">
+           <button class="btn">Laksa Johor</button>
+        </a>
+		
+	  <a href="MeeBandung.html">
+           <button class="btn">Mee Bandung</button>
+        </a>
+		
+	  <a href="MeeSiput.html">
+           <button class="btn">Mee Siput</button>
+        </a>
+	  
+	  <a href="Otak2.html">
+           <button class="btn">Otak-Otak</button>
+        </a>
+	  
+	  <a href="Sate.html">
+           <button class="btn">Satay</button>
+        </a>
+	  
+	  <a href="Soto.html">
+           <button class="btn">Soto</button>
+        </a> 
+		
+	  <a href="TelurPindang.html">
+           <button class="btn">Telur Pindang</button>
+        </a>
+		
+	  <a href="NasiAmbeng.html">
+           <button class="btn">Nasi Ambeng</button>
+        </a>	
+	  
+</header>
+
+   <h1 class="main-title">Taste of Muar</h1>
+   <h2 class="subtitle">Asam Pedas</h2>
+   
+   <hr class="line1">
+   <hr class="line2">
+   
+   <div class= "top-image">
+    <img src="../Images/bandar.png" alt="bandar">
+   </div>
+   
+   <div class="content">
+   <div class="food-image">
+	    <img src="../Images/Asam Pedas.jpg" alt="Asam Pedas">
+		
+   </div>
+    <div class="container">  	 
+    <div class="desc-box">
+        
+        <p>
+        Asam Pedas Muar is an iconic dish from the district of Muar, Johor, well-known for its thick gravy with a balanced spicy and sour taste.
+	    Made using a blend of ground dried chilies, tamarind, and traditional ingredients such as torch ginger flower, Vietnamese coriander (daun kesum), and fresh turmeric,
+	    Asam Pedas Muar stands out with its fragrant aroma and bold flavour.
+	    Usually cooked with stingray, mackerel, or tenggiri, this dish is loved by many for its fresh and authentic taste. 
+	    Asam Pedas Muar is not only satisfying but also reflects the uniqueness of Johor cuisine, which is rich in tradition and flavour.
+        </p>
+	</div>
+	
+	 
+    <div class=box>
+	     <h2>Asam Pedas Recipe</h2>
+  
+         <div class="recipe">
+   
+
+         <h3>Bahan-bahan:</h3>
+		 
+         <h4>Bahan kisar:</h4>
+
+         <p>2 biji bawang merah besar</p>
+         <p>4 ulas bawang putih</p>
+         <p>11/2 inci halia</p>
+         <p>1 inci kunyit hidup</p>
+         <p>1 sudu kecil lada hitam</p>
+         <p>Sedikit belacan (ikut rasa masing-masing tak letak pun tak apa)</p>
+        
+		 <h4>Bahan lain:</h4>
+         <p>Ikan apa-apa jenis</p>
+         <p>1 senduk penuh cili kering</p>
+         <p>1/2 cawan air asam jawa pekat</p>
+         <p>Daun kesum</p>
+         <p>1-2 kuntum bunga kantan</p>
+         <p>1 cawan air biasa</p>
+         <p> Garam secukupnya</p>
+         
+
+         <h3>Cara Penyediaan:</h3>
+         <ol>
+            <li>Panaskan minyak masukkan bahan kisar tadi, tumis sampai naik bau.</li>
+            <li>Masukkan cili kering dan tumis sampai pecah minyak.</li>
+            <li>Bila bahan tumis tadi pecah minyak masukkan air asam jawa, tunggu smpai mendidih.</li>
+            <li>Masukkan bunga kantan atau daun kesum dan masak sampai naik bau.</li>
+            <li>Akhir sekali baru masukkan 1 ekor ikan yang telah dikerat dan garam secukup rasa.</li>
+
+         </ol>
+         </div>
+		 	 
+		
+    </div>
+   
+    </div>
+   
+    </div>
+	      <hr class="line1">
+          <hr class="line2">
+	     
+		 <h2 class="shop-title">Famous Asam Pedas spots in Muar</h2>
+
+         <div class="shop-item">
+            <h3>Asam Pedas Jalan Joned (Asam Pedas Simol)</h3>
+            <p>Jln Junid, Taman Sri Tanjung, 84000 Muar, Johor</p>
+			<p>Tel: -</p>
+            <p><strong>Closes:</strong> 5 pm</p>
+         </div>
+
+         <div class="shop-item">
+            <h3>Asam Pedas Telur Ikan Tanjung Agas</h3>
+            <p> Kampung Tanjung Agas, 84000 Muar, Johor</p>
+            <p>Tel: 017-619 0373</p>
+            <p><strong>Closes:</strong> Tutup 5 pm</p>
+         </div>
+
+         <div class="shop-item">
+           <h3>Jeti Asam Pedas Power</h3>
+           <p>Lot 17, Bangunan Mara Muar, Jalan Maharani, Pekan Muar, 84000 Muar, Johor</p>
+           <p>Tel: 017-605 4855</p>
+           <p><strong>Closes:</strong> Tutup 6 pm</p>
+         </div>
+
+
+  </div>
+  
+  <div class="rate">
+    <p class="rate-title">Did you find this information helpful?</p>
+
+    <button class="rate-btn yes" onclick="rateUseful(true)">YES</button>
+    <button class="rate-btn no" onclick="rateUseful(false)">NO</button>
+
+    <p id="usefulMsg" class="rate-msg"></p><br>
+	
+	<form onsubmit="saveComment(event)">
+	
+            <label for="comment">Comment:</label><br>
+            <textarea rows="5" cols="70" id="comment" placeholder="Type your comment here..."></textarea>
+            <button type="submit" class="submit">Submit</button>
+			
+			<p id="submit-comment" class="Submit"></p><br>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Taste of Muar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

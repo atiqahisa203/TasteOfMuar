@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <link rel="stylesheet" href="../CSS/MeeSiput.css">
+ <title>Mee Siput</title>
+ 
+<script>
+function rateUseful(isUseful) {
+    const msg = document.getElementById("usefulMsg");
+
+    if (isUseful) {
+        msg.innerHTML = "Thank you! We're glad this information was useful to you. ";
+        msg.style.color = "green";
+    } else {
+        msg.innerHTML = "Thank you for your feedback. We will improve this information. ";
+        msg.style.color = "red";
+    }
+}
+function saveComment(event) {
+    event.preventDefault(); 
+
+    const commentBox = document.getElementById("comment");
+    const comment = commentBox.value.trim();
+    const submitMsg = document.getElementById("submit-comment");
+
+    submitMsg.innerHTML = "Your comment has been submitted: " + comment;
+    submitMsg.style.color = "green";
+
+    commentBox.value = "";
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+      <a href="Taste of Muar.html">
+           <button class="btn">Home</button>
+        </a>
+	  
+	  <a href="AsamPedas.html">
+           <button class="btn">Asam Pedas</button>
+        </a>
+	  
+	  <a href="LaksaJohor.html">
+           <button class="btn">Laksa Johor</button>
+        </a>
+		
+	  <a href="MeeBandung.html">
+           <button class="btn">Mee Bandung</button>
+        </a>
+		
+	  <a href="MeeSiput.html">
+           <button class="btn">Mee Siput</button>
+        </a>
+	  
+	  <a href="Otak2.html">
+           <button class="btn">Otak-Otak</button>
+        </a>
+	  
+	  <a href="Sate.html">
+           <button class="btn">Satay</button>
+        </a>
+	  
+	  <a href="Soto.html">
+           <button class="btn">Soto</button>
+        </a> 
+		
+	  <a href="TelurPindang.html">
+           <button class="btn">Telur Pindang</button>
+        </a>
+	
+      <a href="NasiAmbeng.html">
+           <button class="btn">Nasi Ambeng</button>
+        </a>
+	  
+       </div>
+</header>
+
+   <h1 class="main-title">Taste of Muar</h1>
+   <h2 class="subtitle">Mee Siput</h2>
+   
+   <hr class="line1">
+   <hr class="line2">
+   
+   <div class= "top-image">
+    <img src="../Images/bandar.png" alt="bandar">
+   </div>
+   
+   <div class="content">
+   <div class="food-image">
+	    <img src="../Images/Mee Siput.jpeg" alt="Mee Siput">
+		
+   </div>
+    <div class="container">  	 
+    <div class="desc-box">
+        
+        <p>
+		 Mee Siput Muar is a famous traditional snack from Muar, Johor, known for its unique spiral shape that resembles a snail shell, making it easily recognizable.
+		 It is made from a dough of wheat flour that is manually shaped before being deep fried until crispy and golden.
+		 Mee Siput is usually enjoyed with fragrant sweet–spicy sambal tumis that enhances its flavour.
+		 The combination of the crunchy noodles and the spicy sambal makes this snack popular, whether eaten on its own or served as a side dish.
+		 Mee Siput Muar is not just a light snack, but also a culinary heritage of Johor that remains beloved to this day.
+        </p>
+   </div>
+	
+	 
+    <div class=box>
+	     <h2>Mee siput Recipe</h2>
+  
+         <div class="recipe">
+   
+
+         <h3>Bahan-bahan:</h3>
+		 
+         <p>1 mangkuk lada kering (kisar halus).</p>
+         <p>5 ulas bawang putih (kisar halus).</p>
+         <p>2 biji bawang besar (kisar halus).</p>
+         <p>2 biji bawang holand (hiris kasar).</p>
+         <p>Senggenggam ikan bilis.</p>
+         <p>Belacan (sebesar ibu jari).</p>
+         <p>Asam jawa.</p>
+         <p>Gula melaka (1 ketul).</p>
+         <p>Mee siput (1 bungkus.</p>
+		
+         <h3>Cara Penyediaan:</h3>
+         <ol>
+            <li>Panaskan minyak dan tumis bawang holand sampai kekuningan.</li>
+            <li>Masukkan belacan dan air asam jawa. Dan sambung tumis.</li>
+            <li>Perasakan dengan garam dan gula secukupnya.</li>
+            <li>Masak sambal sehingga garing. </li>
+            <li>Panaskan api lagi untuk goreng mee siput.</li>
+
+         </ol>
+         </div>
+		 	 
+		
+    </div>
+   
+    </div>
+   
+    </div>
+	      <hr class="line1">
+          <hr class="line2">
+	     
+		 <h2 class="shop-title">Famous Mee Siput spots in Muar</h2>
+
+         <div class="shop-item">
+            <h3>Mee Siput Muar</h3>
+            <p>Details. 3 Reviews. No. 10, Jalan Damai 1/1, Taman Damai, Sg. Abong, Muar,Johor </p>
+			<p>Tel: 012-264 2720</p>
+            <p><strong>Closes:</strong> 4 pm</p>
+         </div>
+
+         <div class="shop-item">
+            <h3>Perusahaan Mee Siput</h3>
+            <p>2J4P+3P, Parit Unas Darat, 84000 Parit Jawa, Johor</p>
+            <p>Tel: 018-216 9391</p>
+            <p><strong>Closes:</strong> 5.30 pm</p>
+         </div>
+
+
+  </div>
+  <div class="rate">
+    <p class="rate-title">Did you find this information helpful?</p>
+
+    <button class="rate-btn yes" onclick="rateUseful(true)">YES</button>
+    <button class="rate-btn no" onclick="rateUseful(false)">NO</button>
+
+    <p id="usefulMsg" class="rate-msg"></p>
+	
+	<form onsubmit="saveComment(event)">
+	
+            <label for="comment">Comment:</label><br>
+            <textarea rows="5" cols="70" id="comment" placeholder="Type your comment here..."></textarea>
+            <button type="submit" class="submit">Submit</button>
+			
+			<p id="submit-comment" class="Submit"></p><br>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Taste of Muar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

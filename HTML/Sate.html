@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../CSS/Sate.css">
+ <title>Satay</title>
+<script>
+function rateUseful(isUseful) {
+    const msg = document.getElementById("usefulMsg");
+
+    if (isUseful) {
+        msg.innerHTML = "Thank you! We're glad this information was useful to you.";
+        msg.style.color = "green";
+    } else {
+        msg.innerHTML = "Thank you for your feedback. We will improve this information.";
+        msg.style.color = "red";
+    }
+}
+function saveComment(event) {
+    event.preventDefault(); 
+
+    const commentBox = document.getElementById("comment");
+    const comment = commentBox.value.trim();
+    const submitMsg = document.getElementById("submit-comment");
+
+    submitMsg.innerHTML = "Your comment has been submitted: " + comment;
+    submitMsg.style.color = "green";
+
+    commentBox.value = "";
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<header class="header">
+
+      <a href="Taste of Muar.html">
+           <button class="btn">Home</button>
+        </a>
+	  
+	  <a href="AsamPedas.html">
+           <button class="btn">Asam Pedas</button>
+        </a>
+	  
+	  <a href="LaksaJohor.html">
+           <button class="btn">Laksa Johor</button>
+        </a>
+		
+	  <a href="MeeBandung.html">
+           <button class="btn">Mee Bandung</button>
+        </a>
+		
+	  <a href="MeeSiput.html">
+           <button class="btn">Mee Siput</button>
+        </a>
+	  
+	  <a href="Otak2.html">
+           <button class="btn">Otak-Otak</button>
+        </a>
+	  
+	  <a href="Sate.html">
+           <button class="btn">Satay</button>
+        </a>
+	  
+	  <a href="Soto.html">
+           <button class="btn">Soto</button>
+        </a> 
+		
+	  <a href="TelurPindang.html">
+           <button class="btn">Telur Pindang</button>
+        </a>
+	
+	  <a href="NasiAmbeng.html">
+           <button class="btn">Nasi Ambeng</button>
+        </a>
+	  
+</header>
+
+   <h1 class="main-title">Taste of Muar</h1>
+   <h2 class="subtitle">Satay</h2>
+   
+   <hr class="line1">
+   <hr class="line2">
+   
+   <div class= "top-image">
+    <img src="../Images/bandar.png" alt="bandar">
+   </div>
+   
+   <div class="content">
+   <div class="food-image">
+	    <img src="../Images/Sate.jpg" alt="Satay">
+		
+   </div>
+    <div class="container">  	 
+    <div class="desc-box">
+        
+        <p>
+        Satay in Muar is known for its tender, well marinated meat grilled over charcoal, 
+		giving it a rich smoky aroma. The peanut sauce is thicker and slightly sweeter, making it a perfect match for the skewered meat. 
+		In Muar, satay is also commonly enjoyed in the morning as breakfast, served with soft nasi impit
+		that absorbs the flavorful peanut gravy. This makes satay not only a dinner or supper food, but a unique morning favourite among locals.
+        </p>
+    </div>
+	
+	 
+    <div class=box>
+	     <h2>Satay Recipe</h2>
+  
+         <div class="recipe">
+   
+
+         <h3>Bahan-bahan:</h3>
+		 
+		 <h4> Bahan Utama: </h4>
+		 
+         <p>400 gm isi ayam (dipotong kecil).</p>
+		 <p>200 gm daging (dipotong nipis).</p>
+		 
+		 <h4>Bahan untuk Kisar:</h4>
+		 <p>1 biji bawang besar.</p>
+		 <p>3 ulas bawang putih.</p>
+		 <p>1 inci lengkuas.</p>
+		 <p>1 1/2 inci kunyit hidup.</p>
+		 <p>2 batang serai.</p>
+		 <p>2 inci halia.</p>
+		 <p>1/2 sudu besar jintan putih.</p>
+		 <p>1/2 sudu besar jintan manis.</p>
+		 <p>1 sudu teh garam.</p>
+		 <p>6 sudu besar gula.</p>
+		 <p>1 sudu teh serbuk kunyit.</p>
+		 <p>Secubit serbuk perasa.</p>
+
+		 
+		 <h4>Bahan Kuah Kacang:</h4>
+         <p>2 bungkus Pes Kuah Kacang Segera (sebarang jenama).</p>
+		 <p>1 cawan air.</p>
+		 
+		 <h4>Bahan Nasi Impit dan Sampingan:</h4>
+		 <p>8 bungkus Nasi Impit Segera.</p>
+		 <p>2 liter air.</p>
+		 <p>1/2 batang timun (dipotong dadu).</p>
+		 <p>1 biji bawang besar (dipotong dadu).</p>
+		 
+         <h3>Cara Penyediaan:</h3>
+         <ol>
+            <li>Kisar halus semua bahan kisar. <br>
+			    Tuangkan ke dalam mangkuk & masukkan ayam dan daging.<br>
+				Perap seharian (kalau nak lagi sedap, perap semalaman. Simpan dalam peti ais)</li>
+			<li>Daging dan ayam dikeluarkan dari peti sejuk dan dicucuk pada lidi.<br>
+     			Ulangi langkah ini sehingga kesemua bahan habis.<br>
+			    Kemudian, masukkan pucuk yang telah digoreng ke dalam air dan ramas hingga hancur.</li>
+			<li>Bakar sehingga masak sempurna</li>
+			<li>Masukkan pes kuah kacang dan air ke dalam periuk. Masak sehingga mendidih.</li>
+			<li>Rebus nasi impit sehingga masak sempurna. <br>
+			    Toskan air dan sejukkan. Potong empat apabila ingin dihidangkan.</li>
+            <li>Satay ayam dan daging boleh dihidangkan bersama-sama kuah kacang dan nasi impit.<br>
+			    Turut boleh dihidangkan beserta timun dan bawang.</li>
+         </ol>
+		 
+		
+		 
+         </div>
+		 	 
+		
+    </div>
+   
+    </div>
+   
+    </div>
+	      <hr class="line1">
+          <hr class="line2">
+	     
+		 <h2 class="shop-title">Famous Satay spots in Muar</h2>
+
+         <div class="shop-item">
+            <h3>Restoran Renney's Satay</h3>
+            <p> 205, Jalan Abdullah, Taman Sri Emas, 84000 Muar, Johor  </p>
+			<p>Phone: 019-771 8471</p>
+            <p><strong>Closes:</strong> 4 pm</p>
+         </div>
+
+         <div class="shop-item">
+            <h3>Zin Satay House</h3>
+            <p>176-A, Jalan Bakri, 84000 Muar, Johor</p>
+            <p>Phone: 012-911 9300</p>
+            <p><strong>Closes:</strong> 5 pm</p>
+         </div>
+
+         <div class="shop-item">
+            <h3>Satay Warisan</h3>
+            <p>13, Jalan Majidi, Taman Sri Tanjung, 84000 Muar, Johor </p>
+            <p>Phone: 019-659 0895</p>
+            <p><strong>Closes:</strong> 1.10 pm</p>
+         </div>
+
+  </div>
+  <div class="rate">
+    <p class="rate-title">Did you find this information helpful?</p>
+
+    <button class="rate-btn yes" onclick="rateUseful(true)">YES</button>
+    <button class="rate-btn no" onclick="rateUseful(false)">NO</button>
+
+    <p id="usefulMsg" class="rate-msg"></p>
+	
+	<form onsubmit="saveComment(event)">
+	
+            <label for="comment">Comment:</label><br>
+            <textarea rows="5" cols="70" id="comment" placeholder="Type your comment here..."></textarea>
+            <button type="submit" class="submit">Submit</button>
+			
+			<p id="submit-comment" class="Submit"></p><br>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Taste of Muar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

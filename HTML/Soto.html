@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../CSS/Soto.css">
+ <title>Soto Ayam</title>
+<script>
+function rateUseful(isUseful) {
+    const msg = document.getElementById("usefulMsg");
+
+    if (isUseful) {
+        msg.innerHTML = "Thank you! We're glad this information was useful to you.";
+        msg.style.color = "green";
+    } else {
+        msg.innerHTML = "Thank you for your feedback. We will improve this information.";
+        msg.style.color = "red";
+    }
+}
+function saveComment(event) {
+    event.preventDefault(); 
+
+    const commentBox = document.getElementById("comment");
+    const comment = commentBox.value.trim();
+    const submitMsg = document.getElementById("submit-comment");
+
+    submitMsg.innerHTML = "Your comment has been submitted: " + comment;
+    submitMsg.style.color = "green";
+
+    commentBox.value = "";
+}
+</script>
+
+</head>
+
+<body>
+<header class="header">
+
+      <a href="Taste of Muar.html">
+           <button class="btn">Home</button>
+        </a>
+	  
+	  <a href="AsamPedas.html">
+           <button class="btn">Asam Pedas</button>
+        </a>
+	  
+	  <a href="LaksaJohor.html">
+           <button class="btn">Laksa Johor</button>
+        </a>
+		
+	  <a href="MeeBandung.html">
+           <button class="btn">Mee Bandung</button>
+        </a>
+		
+	  <a href="MeeSiput.html">
+           <button class="btn">Mee Siput</button>
+        </a>
+	  
+	  <a href="Otak2.html">
+           <button class="btn">Otak-Otak</button>
+        </a>
+	  
+	  <a href="Sate.html">
+           <button class="btn">Satay</button>
+        </a>
+	  
+	  <a href="Soto.html">
+           <button class="btn">Soto</button>
+        </a> 
+		
+	  <a href="TelurPindang.html">
+           <button class="btn">Telur Pindang</button>
+        </a>
+	
+      <a href="NasiAmbeng.html">
+           <button class="btn">Nasi Ambeng</button>
+        </a>
+	  
+</header>
+
+   <h1 class="main-title">Taste of Muar</h1>
+   <h2 class="subtitle">Soto</h2>
+   
+   <hr class="line1">
+   <hr class="line2">
+   
+   <div class= "top-image">
+    <img src="../Images/bandar.png" alt="bandar">
+   </div>
+   
+   <div class="content">
+   <div class="food-image">
+	    <img src="../Images/Soto.png" alt="Soto Ayam">
+		
+   </div>
+    <div class="container">  	 
+    <div class="desc-box">
+        
+        <p>
+        Soto Muar is a beloved traditional dish from Johor, known for its fragrant, clear broth made from a blend of spices
+		such as coriander, cumin, turmeric, and galangal. It is commonly served with nasi impit, bean sprouts, vermicelli,
+		and a generous topping of fried shallots and fresh herbs. The dish is incomplete without its signature begedil, which adds a soft and savoury element. 
+		With its light yet flavorful taste, Soto Muar remains a favourite comfort meal in Muar.
+        </p>
+	</div>
+	
+	 
+    <div class=box>
+	     <h2>Soto Recipe</h2>
+  
+         <div class="recipe">
+   
+
+         <h3>Bahan-bahan:</h3>
+		 
+		 <h4> Bahan Rempah Tumis Kuah Soto: </h4>
+		 
+         <p>43 biji bunga lawang.</p>
+		 <p>2 batang kayu manis.</p>
+		 <p>4 kuntum cengkih.</p>
+		 <p>6 biji buah pelaga.</p>
+		 <p>1 sudu besar jintan manis.</p>
+		 <p>1 sudu besar jintan putih.</p>
+		 <p>1 sudu besar serbuk lada putih atau lada sulah.</p>
+		 
+		 <h4>Bahan untuk Kisar:</h4>
+		 <p>5 biji bawang merah.</p>
+		 <p>4 ulas bawang putih.</p>
+		 <p>3 batang serai.</p>
+		 <p>1 inci halia.</p>
+		 <p>1 ketul kunyit hidup.</p>
+
+		 
+		 <h4>Bahan Kuah:</h4>
+         <p>1/2 senduk minyak masak.</p>
+		 <p>1 ekor ayam saiz sederhana kecil, potong 4.</p>
+		 <p>1 mangkuk santan pekat.</p>
+		 <p>1 jug air.
+		 
+		 <h4>Bahan Untuk Dihidangkan Soto Ayam:</h4>
+		 <p>3-4 bungkus nasi impit, rebus sehingga masak dan potong dadu besar.</p>
+		 <p>500 gram taugeh, bersihkan dan potong bahagian akar.</p>
+		 <p>bawang goreng.</p>
+		 <p>suhun, goreng hingga garing.</p>
+		 <p>isi ayam goreng dari sup, dicarik halus.</p>
+		 <p>daun sup, hiris kecil.</p>
+		 <p>daun bawang, hiris kecil.</p>
+		 <p>cili merah, hiris nipis.</p>
+		 <p>kacang tanah, goreng dalam minyak.</p>
+		 <p>begedil.</p>
+		 <p>Bahan untuk kuah kicap bercili.</p>
+		 <p>1 mangkuk kecil kicap manis.</p>
+		 <p>10-15 biji cili padi.</p>
+		 <p>5 ulas bawang putih.</p>
+		 <p>2 biji limau kasturi.</p>
+		 
+         <h3>Cara Penyediaan:</h3>
+         <ol>
+            <li>Panaskan minyak masak, masukkan bahan tumis dan kacau sehingga naik bau dan <br>
+				kemudian masukkan bahan kisar.Kacau dan masak rempah sehingga garing.</li>
+			<li>Masukkan ayam dan kacau selama 1-2 minit. Masukkan air, kiub ayam dan rebus sup sehingga<br>
+				mendidih seketika.Masukkan pula santan pekat dan masak sehingga ayam lembut dan empuk.</li>
+			<li>Perasakan dengan garam dan gula secukup rasa.</li>
+			<li>Angkat ketulan ayam dan gorengkan seketika sehingga kekuningan.<br> 
+				Sejukkan dan carik isi ayam.</li>
+			<li>Hidangkan dengan cara masukkan ketulan nasi impit, isi ayam,<br>
+				taugeh, daun sup, cili merah, begedil, bawang goreng,<br> 
+				suhun goreng dan kacang tanah.Tuang kuah secukupnya. 
+				Soto harus dimakan bersama cili kicap.<br></li>
+         </ol>
+		 
+		
+		 
+         </div>
+		 	 
+		
+    </div>
+   
+    </div>
+   
+    </div>
+	      <hr class="line1">
+          <hr class="line2">
+	     
+		 <h2 class="shop-title">Famous Soto spots in Muar</h2>
+
+         <div class="shop-item">
+            <h3>Satay Soto Satiman Muar</h3>
+            <p> LOT 2992 PARIT HAJI BAKI , 84000 Muar, Johor </p>
+			<p>Phone: 011-1771 5676</p>
+            <p><strong>Closes:</strong> 11 pm</p>
+         </div>
+
+         <div class="shop-item">
+            <h3> Ezan Sate, Hentian Bas</h3>
+            <p> G18 Kompleks Hentian Maharani, Jalan Maharani, Maharani, 84000 Muar, Johor,</p>
+            <p>Phone: 013-303 0900</p>
+            <p><strong>Closes:</strong> 1 pm</p>
+         </div>
+
+         <div class="shop-item">
+            <h3>Warong Santai Klasik</h3>
+            <p>Jalan Dato Hj Kosai, Kampung Parit Keroma Darat, 84000 Muar, Johor </p>
+            <p>Phone: 019-374 5307</p>
+            <p><strong>Closes:</strong> 12 pm</p>
+         </div>
+
+  </div>
+  <div class="rate">
+    <p class="rate-title">Did you find this information helpful?</p>
+
+    <button class="rate-btn yes" onclick="rateUseful(true)">YES</button>
+    <button class="rate-btn no" onclick="rateUseful(false)">NO</button>
+
+    <p id="usefulMsg" class="rate-msg"></p>
+	
+	<form onsubmit="saveComment(event)">
+	
+            <label for="comment">Comment:</label><br>
+            <textarea rows="5" cols="70" id="comment" placeholder="Type your comment here..."></textarea>
+            <button type="submit" class="submit">Submit</button>
+			
+			<p id="submit-comment" class="Submit"></p><br>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Taste of Muar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

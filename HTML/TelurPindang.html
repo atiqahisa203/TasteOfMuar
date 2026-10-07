@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../CSS/TelurPindang.css">
+ <title>Telur Pindang</title>
+<script>
+function rateUseful(isUseful) {
+    const msg = document.getElementById("usefulMsg");
+
+    if (isUseful) {
+        msg.innerHTML = "Thank you! We're glad this information was useful to you.";
+        msg.style.color = "green";
+    } else {
+        msg.innerHTML = "Thank you for your feedback. We will improve this information.";
+        msg.style.color = "red";
+    }
+}
+function saveComment(event) {
+    event.preventDefault(); 
+
+    const commentBox = document.getElementById("comment");
+    const comment = commentBox.value.trim();
+    const submitMsg = document.getElementById("submit-comment");
+
+    submitMsg.innerHTML = "Your comment has been submitted: " + comment;
+    submitMsg.style.color = "green";
+
+    commentBox.value = "";
+}
+</script>
+
+</head>
+
+<body>  
+<header class="header">
+
+      <a href="Taste of Muar.html">
+           <button class="btn">Home</button>
+        </a>
+	  
+	  <a href="AsamPedas.html">
+           <button class="btn">Asam Pedas</button>
+        </a>
+	  
+	  <a href="LaksaJohor.html">
+           <button class="btn">Laksa Johor</button>
+        </a>
+		
+	  <a href="MeeBandung.html">
+           <button class="btn">Mee Bandung</button>
+        </a>
+		
+	  <a href="MeeSiput.html">
+           <button class="btn">Mee Siput</button>
+        </a>
+	  
+	  <a href="Otak2.html">
+           <button class="btn">Otak-Otak</button>
+        </a>
+	  
+	  <a href="Sate.html">
+           <button class="btn">Satay</button>
+        </a>
+	  
+	  <a href="Soto.html">
+           <button class="btn">Soto</button>
+        </a> 
+		
+	  <a href="TelurPindang.html">
+           <button class="btn">Telur Pindang</button>
+        </a>
+	
+      <a href="NasiAmbeng.html">
+           <button class="btn">Nasi Ambeng</button>
+        </a>
+</header>
+
+   <h1 class="main-title">Taste of Muar</h1>
+   <h2 class="subtitle">Telur Pindang</h2>
+   
+   <hr class="line1">
+   <hr class="line2">
+   
+   <div class= "top-image">
+    <img src="../Images/bandar.png" alt="bandar">
+   </div>
+   
+   <div class="content">
+     <div class="food-image">
+	    <img src="../Images/Telur Pindang.jpeg" alt="Telur Pindang">
+		
+   </div>
+    <div class="container">  	 
+    <div class="desc-box">
+        <p>
+		 Telur Pindang is a traditional delicacy popular in Muar, Johor, known for its unique appearance and rich flavour.
+		 The eggs are slow cooked for several hours with a mixture of herbs and natural ingredients such as onion skins, guava leaves, turmeric, tamarind peel, and spices.
+		 This long simmering process gives the eggs their distinctive marbled brown colour and deep, savoury aroma.
+		 Telur Pindang is often served during weddings, festive events, and special family occasions, symbolizing blessings and good fortune.
+		 Its fragrant, mildly salty taste and attractive marbled pattern make it a cherished culinary heritage of Muar.
+        </p>     
+	 </div>
+	
+	 
+    <div class=box>
+	     <h2>Telur Pindang Recipe</h2>
+  
+         <div class="recipe">
+   
+
+         <h3>Bahan-bahan:</h3>
+		 
+		 <h4> Bahan Utama: </h4>
+		 
+         <p>1 cekak daun salam.</p>
+		 <p>1 cekak daun jambu batu.</p>
+		 <p>1 cekak daun senduduk (berbunga ungu).</p>
+		 <p>1 cekak daun manggis.</p>
+		 <p>1 cekak daun mengkudu.</p>
+		 <p>5 tangkai daun serai wangi.</p>
+		 <p>1 cekak daun bebuas.</p>
+		 <p>6 batang serai (lebih lagi baik).</p>
+		 <p>sebuku lengkuas.</p> 
+		 <p>2 sudu besar Jintan kasar.</p>
+		 <p>2 sudu besar Jintan halus.</p>
+		 <p>2 sudu besar Ketumbar.</p>
+		 <p>Garam kasar sepeket kecil.</p> 
+		 <p>Telur 30 biji.</p>
+		 <p>Air.</p>
+		 
+         <h3>Cara Penyediaan:</h3>
+         <ol>
+            <li>Basuh dulu telur dan segala bahan bersih-bersih.</li>
+			<li>Susun telur berselang seli dengan segala daun dan rempah.</li>
+			<li>Masukkan air melebihi telur sehingga telur tenggelam.<br>
+				Reneh semua sekali dalam 3 hari 3 malam dalam api kecik.</li>
+			<li>Hari ke-4 keluarkan telur daripada periuk.</li>
+         </ol>
+		 
+	
+         </div>
+		 	 
+		
+    </div>
+   
+    </div>
+   
+    </div>
+	      <hr class="line1">
+          <hr class="line2">
+	     
+		 <h2 class="shop-title">Popular Suppliers of Telur Pindang in Muar</h2>
+
+         <div class="shop-item">
+            <h3>Aina Katering Muar</h3>
+            <p> 28 C Jalan Omar, Parit Tengah, Parit Jawa, 84150 Muar,Johor  </p>
+			<p>Phone: 017-752 0400</p>
+         </div>
+
+         <div class="shop-item">
+            <h3>Telur Pindang Wak Leman</h3>
+            <p>Muar, Johor</p>
+            <p>Phone: 019-972 5782</p>
+         </div>
+
+         <div class="shop-item">
+            <h3>D'zaty Telur Pindang Muar</h3>
+            <p> Muar, Johor </p>
+            <p>Phone: 011-1751 0300 </p>
+            
+         </div>
+
+  </div>
+  <div class="rate">
+    <p class="rate-title">Did you find this information helpful?</p>
+
+    <button class="rate-btn yes" onclick="rateUseful(true)">YES</button>
+    <button class="rate-btn no" onclick="rateUseful(false)">NO</button>
+
+    <p id="usefulMsg" class="rate-msg"></p>
+	
+	<form onsubmit="saveComment(event)">
+	
+            <label for="comment">Comment:</label><br>
+            <textarea rows="5" cols="70" id="comment" placeholder="Type your comment here..."></textarea>
+            <button type="submit" class="submit">Submit</button>
+			
+			<p id="submit-comment" class="Submit"></p><br>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Taste of Muar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

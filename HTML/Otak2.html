@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../CSS/Otak2.css">
+<script>
+function rateUseful(isUseful) {
+    const msg = document.getElementById("usefulMsg");
+
+    if (isUseful) {
+        msg.innerHTML = "Thank you! We're glad this information was useful to you. ";
+        msg.style.color = "green";
+    } else {
+        msg.innerHTML = "Thank you for your feedback. We will improve this information. ";
+        msg.style.color = "red";
+    }
+}
+function saveComment(event) {
+    event.preventDefault(); 
+
+    const commentBox = document.getElementById("comment");
+    const comment = commentBox.value.trim();
+    const submitMsg = document.getElementById("submit-comment");
+
+    submitMsg.innerHTML = "Your comment has been submitted: " + comment;
+    submitMsg.style.color = "green";
+
+    commentBox.value = "";
+}
+</script>
+
+</head>
+
+<body>
+<header class="header">
+
+      <a href="Taste of Muar.html">
+           <button class="btn">Home</button>
+        </a>
+	  
+	  <a href="AsamPedas.html">
+           <button class="btn">Asam Pedas</button>
+        </a>
+	  
+	  <a href="LaksaJohor.html">
+           <button class="btn">Laksa Johor</button>
+        </a>
+		
+	  <a href="MeeBandung.html">
+           <button class="btn">Mee Bandung</button>
+        </a>
+		
+	  <a href="MeeSiput.html">
+           <button class="btn">Mee Siput</button>
+        </a>
+	  
+	  <a href="Otak2.html">
+           <button class="btn">Otak-Otak</button>
+        </a>
+	  
+	  <a href="Sate.html">
+           <button class="btn">Satay</button>
+        </a>
+	  
+	  <a href="Soto.html">
+           <button class="btn">Soto</button>
+        </a> 
+		
+	  <a href="TelurPindang.html">
+           <button class="btn">Telur Pindang</button>
+        </a>
+		
+	  <a href="NasiAmbeng.html">
+           <button class="btn">Nasi Ambeng</button>
+        </a>	
+	  
+</header>
+
+   <h1 class="main-title">Taste of Muar</h1>
+   <h2 class="subtitle">Otak-otak</h2>
+   
+   <hr class="line1">
+   <hr class="line2">
+   
+   <div class= "top-image">
+    <img src="../Images/bandar.png" alt="bandar">
+   </div>
+   
+   <div class="content">
+   <div class="food-image">
+	    <img src="../Images/Otak-otak.jpeg" alt="Otak-otak">
+		
+   </div>
+    <div class="container">  	 
+    <div class="desc-box">
+        
+        <p>
+		 Otak-otak Muar is a well known traditional dish from Johor.
+		 It is made from finely blended mackerel mixed with coconut milk and spices, then wrapped in banana leaves before being steamed or grilled.
+		 Its taste is delicious, slightly spicy and sweet, with a fragrant aroma from the banana leaves.
+		 This dish is a favourite among many, especially at night markets and traditional gatherings.
+    </div>
+	
+	 
+    <div class=box>
+	     <h2>Otak-otak Recipe</h2>
+  
+         <div class="recipe">
+   
+
+         <h3>Bahan-bahan:</h3>
+         <p>500g isi ikan tenggiri (dihaluskan)</p>
+         <p>150g tepung tapioka</p>
+         <p>50g tepung sagu</p>
+         <p>2 biji telur</p>
+         <p>200ml santan</p>
+         <p>Bawang putih & bawang merah (dihaluskan)</p>
+         <p>Daun bawang & seledri (diiris)</p>
+         <p>Garam, gula, merica</p>
+         <p>Daun pisang untuk membungkus</p>
+
+         <h3>Cara Penyediaan:</h3>
+         <ol>
+            <li>Haluskan ikan bersama sedikit ais.</li>
+            <li>Masukkan ke mangkuk, tambah tepung tapioka & sagu, gaul rata.</li>
+            <li>Masukkan telur, santan, bawang putih & bawang merah. Gaul sebati.</li>
+            <li>Tambah daun bawang, seledri, garam, gula & merica. Uli hingga kalis.</li>
+            <li>Bungkus adunan dalam daun pisang berbentuk silinder.</li>
+            <li>Panggang 10–15 minit atau kukus 15–20 minit hingga masak.</li>
+            <li>Hidang dengan sos kacang atau sambal.</li>
+         </ol>
+         </div>       
+		 
+		
+    </div>
+   
+    </div>
+   
+    </div>
+	      <hr class="line1">
+          <hr class="line2">
+	     
+		 <h2 class="shop-title">Famous Otak-otak spots in Muar</h2>
+
+         <div class="shop-item">
+            <h3>Xiao Mei Famous Muar Otak-otak</h3>
+            <p>Seafood store 24, Jalan Hashim</p>
+            <p>Tel: 06-952 3430</p>
+            <p><strong>Closes:</strong> 5:30 pm</p>
+         </div>
+
+         <div class="shop-item">
+            <h3>Muar Bakariah Otah</h3>
+            <p>Food products supplier 18, Jalan Meranti 1</p>
+            <p>Tel: 019-667 9553</p>
+            <p><strong>Closes:</strong> 6 pm</p>
+         </div>
+
+         <div class="shop-item">
+           <h3>K&Y Otak-Otak Muar Branch</h3>
+           <p>Souvenir store 3, Jalan Meriam</p>
+           <p>Tel: 06-959 3949</p>
+           <p><strong>Closes:</strong> 7 pm</p>
+         </div>
+
+
+  </div>
+  <div class="rate">
+    <p class="rate-title">Did you find this information helpful?</p>
+
+    <button class="rate-btn yes" onclick="rateUseful(true)">YES</button>
+    <button class="rate-btn no" onclick="rateUseful(false)">NO</button>
+
+    <p id="usefulMsg" class="rate-msg"></p>
+	
+	<form onsubmit="saveComment(event)">
+	
+            <label for="comment">Comment:</label><br>
+            <textarea rows="5" cols="70" id="comment" placeholder="Type your comment here..."></textarea>
+            <button type="submit" class="submit">Submit</button>
+			
+			<p id="submit-comment" class="Submit"></p><br>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Taste of Muar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
